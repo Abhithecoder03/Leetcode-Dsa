@@ -11,7 +11,7 @@ class Solution:
                 return 0
             if depth==2:
                 curr.left=TreeNode(val ,left=curr.left)
-                curr.right=TreeNode(val,right=curr.right)
+                curr.right=TreeNode(val,right=curr.right) 
             dfs(curr.left,val,depth-1)
             dfs(curr.right,val,depth-1)
         if depth==1:
