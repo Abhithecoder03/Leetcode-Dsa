@@ -13,13 +13,13 @@ class Solution:
             v2 += [0] * len_diff
         print(v1,v2)
         
-        for rev1, rev2 in zip(v1, v2):
-            if rev1 < rev2:
-                return -1
-            elif rev1 > rev2:
-                return 1
-
-        return 0  
+        
+        if v1 < v2:
+            return -1
+        elif v1 > v2:
+            return 1
+        else:
+            return 0  
 
 
                     
