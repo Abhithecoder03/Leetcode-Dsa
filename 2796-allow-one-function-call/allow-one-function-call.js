@@ -6,9 +6,9 @@ var once = function(fn) {
     let call=0
     return function(...args){
         
-        for(let i=0;i<1;i++){
+        
             
-           if(call==0 && i<1){
+           if(call==0){
             
             call=1
             return fn(...args)
@@ -18,7 +18,7 @@ var once = function(fn) {
           
         }
     }
-};
+
 
 /**
  * let fn = (a,b,c) => (a + b + c)
